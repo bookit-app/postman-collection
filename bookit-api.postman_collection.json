@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "67adc286-8d61-4850-9f1e-82af611837ea",
+		"name": "bookit-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Query for a Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esp-vllmtwjp2a-uc.a.run.app/profile?profileId=<PROFILE>",
+							"protocol": "https",
+							"host": [
+								"esp-vllmtwjp2a-uc",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"profile"
+							],
+							"query": [
+								{
+									"key": "profileId",
+									"value": "<PROFILE>"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"\",\n    \"gender\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": {\n        \"city\": \"\",\n        \"state\": \"\",\n        \"streetAddress\": \"\",\n        \"zip\": 12345\n    },\n    \"isProvider\": false,\n    \"email\": \"\",\n    \"isSocial\": true,\n    \"birthday\": \"\",\n    \"lastName\": \"\",\n    \"uid\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esp-vllmtwjp2a-uc.a.run.app/profile",
+							"protocol": "https",
+							"host": [
+								"esp-vllmtwjp2a-uc",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gender\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": {\n        \"city\": \"\",\n        \"state\": \"\",\n        \"streetAddress\": \"\",\n        \"zip\": 12345\n    },\n    \"isProvider\": false,\n    \"birthday\": \"\",\n    \"uid\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esp-vllmtwjp2a-uc.a.run.app/profile",
+							"protocol": "https",
+							"host": [
+								"esp-vllmtwjp2a-uc",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
