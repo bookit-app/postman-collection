@@ -108,6 +108,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://delete-profile-vllmtwjp2a-uc.a.run.app/<PROFILEID>",
+							"protocol": "https",
+							"host": [
+								"delete-profile-vllmtwjp2a-uc",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"<PROFILEID>"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
